@@ -1,25 +1,35 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+
+import './scss/index.scss';
+import './assets/icons/css/all.min.css';
+
+import Layout from './components/Layout';
+import Home from './pages/Home';
+import Login from './pages/Login';
+import Signup from './pages/Signup';
+import Synopsis from './pages/Synopsis';
+import Show from './pages/Show';
+import Profile from './pages/Profile';
+import Directory from './pages/Directory';
+import Schedule from './pages/Schedule';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Layout>
+        <Switch>
+          <Route exact path="/" component={Home}/>
+          <Route exact path="/login" component={Login}/>
+          <Route exact path="/registro" component={Signup}/>
+          <Route exact path="/sinopsis" component={Synopsis}/>
+          <Route exact path="/ver" component={Show}/>
+          <Route exact path="/perfil" component={Profile}/>
+          <Route exact path="/directorio" component={Directory} />
+          <Route exact path="/horario" component={Schedule} />
+        </Switch>
+      </Layout>
+    </BrowserRouter>
   );
 }
 

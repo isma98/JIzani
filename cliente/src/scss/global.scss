@@ -1,0 +1,33 @@
+* {
+    padding:0;
+    margin:0;
+}
+
+//Responsive variables
+
+$phone: 576px;
+$tablet: 768px;
+$laptop-lg: 992px;
+$laptop-xl: 1200px;
+
+body{
+	background-color: #E7E5DF;
+}
+
+body::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+body::-webkit-scrollbar-track{
+	background-color: #393E41;
+}
+
+body::-webkit-scrollbar:vertical {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #05AFF2;
+    border-radius: 20px;
+    border: 1px solid #2182BF;
+}

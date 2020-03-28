@@ -1,0 +1,45 @@
+@font-face{
+    font-family: "Poppins-Bold";
+    src: url('../assets/fonts/Poppins-Bold.ttf');
+}
+@font-face{
+    font-family: "Poppins-Regular";
+    src: url('../assets/fonts/Poppins-Regular.ttf');
+}
+@font-face{
+    font-family: "PoppinsLight";
+    src: url('../assets/fonts/Poppins-Light.ttf');
+}
+@font-face{
+    font-family: "Poppins-Medium";
+    src: url('../assets/fonts/Poppins-Medium.ttf');
+}
+
+//Font texts
+
+$title : Poppins-Bold;
+$subtitle : Poppins-Medium;
+$text : Poppins-Regular;
+$annotation : Poppins-Light;
+
+//Size texts
+
+$title-phone: 18px;
+$title-tablet: 22px;
+$title-laptop: 26px;
+
+$subtitle-phone: 17px;
+$subtitle-tablet: 21px;
+$subtitle-laptop: 25px;
+
+$text-phone: 16px;
+$text-tablet: 20px;
+$text-laptop: 24px;
+
+$annotation-phone: 14px;
+$annotation-tablet: 18px;
+$annotation-laptop: 22px;
+
+$icon-phone:19px;
+$icon-tablet:21px;
+$icon-laptop:23px;
