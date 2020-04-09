@@ -6,6 +6,7 @@
     height: 100%;
     display: flex;
     flex-wrap: wrap;
+    
     &__container-logo{
         width: 100%;
         height: 65%;
@@ -18,12 +19,15 @@
             }
         }
     }
+
     &__container-menu{
         width: 100%;
+        height: 35%;
         position: relative;
         display: flex;
         justify-content: space-around;
         align-items: center;
+
         #chk-profile,
         #chk-menu{
             position: absolute;
@@ -31,11 +35,12 @@
             visibility: hidden;
             display: none;
         }
+
         .container-profile{
             position: absolute;
             top: 0;
             left: -100%;
-            z-index: 10;
+            z-index: 99;
             width: 100%;
             transition: 0.7s;
             padding:20px 0;
@@ -45,9 +50,11 @@
             align-items: center;
             justify-content: space-around;
         }
+
         .container-menu{
             position: fixed;
             top: 0;
+            z-index: 99;
             transition: 0.7s;
             right: -100%;
             width: 60%;
@@ -56,8 +63,13 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: space-around;
+            justify-content: center;
 
+            label{
+                position: absolute;
+                top: 30px;
+                right: 30px;
+            }
         }
         
     }
@@ -87,6 +99,7 @@
     margin: 10px;
     font-size: $icon-phone;
     color: $primary-icon-color;
+    cursor: pointer;
     &.close{
       color:$secondary-icon-color;  
     }
@@ -98,4 +111,70 @@
 
 #chk-menu:checked ~ .container-menu{
     right: 0;
+}
+
+@media screen and (min-width:$tablet){
+    .navbar{
+        &__container-menu{
+            flex-direction: row-reverse;
+
+            .icon-menu{
+                display: none;
+            }
+            .icon-profile{
+                .icon{
+                    font-size: $icon-tablet;
+                    &:hover{
+                        color: $primary-icon-color-hover;   
+                    }
+                }
+            }
+            
+            .container-profile{
+                label{
+                    .icon{
+                        font-size: $icon-tablet;
+                    }
+                }
+            }
+
+            .container-menu{
+                position: initial;
+                background-color: transparent;
+                width: 70%;
+                height: 100%;
+                z-index: 1;
+                flex-direction: row;
+                
+                label{
+                    display: none;
+                }
+                .menu{
+                    width: 100%;
+                    &__list{
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-around;
+                        
+                        li{
+                            padding: 0 15px;
+                            a{
+                                text-align: initial;
+                                color: $navbar-secondary-items-color;
+                                &:hover{
+                                    color: $navbar-secondary-items-color-hover;
+                                }
+                            }
+                            &:hover{
+                                border-bottom: initial;
+                                border-left: 1px solid $secondary-border-color;
+                                border-right: 1px solid $secondary-border-color;
+                            } 
+                        }
+                    }   
+                
+                }
+            }
+        }
+    }
 }

@@ -20,11 +20,11 @@ export default function Navbar(){
                 <input type="checkbox" id="chk-menu" />
                 <input type="checkbox" id="chk-profile" />
 
-                <label htmlFor="chk-profile">
+                <label className="icon-profile" htmlFor="chk-profile">
                     <i className="icon fas fa-user"></i>
                 </label>
 
-                <label htmlFor="chk-menu">
+                <label className="icon-menu" htmlFor="chk-menu">
                     <i className="icon fas fa-bars"></i>
                 </label>
 
@@ -34,9 +34,6 @@ export default function Navbar(){
                     </label>
                     <div className="menu-profile">
                         <ul className="menu__list">
-                            <li className="menu__list-item">
-                                <Link to="/perfil" >ver perfil</Link>
-                            </li>
                             <li className="menu__list-item">
                                 <Link to="/login">cerrar sesión</Link>
                             </li>
@@ -49,11 +46,6 @@ export default function Navbar(){
                         <i className="icon close fas fa-times"></i>
                     </label>
                     
-                    <form className="box-search">
-                        <input type="search" name="search" placeholder="Buscar..." />
-                        <input type="submit" name="buscar" value="buscar" />
-                    </form>
-
                     <nav className="menu">
                         <ul className="menu__list">
                             <li className="menu__list-item">
@@ -63,13 +55,7 @@ export default function Navbar(){
                                 <Link to="/directorio">directorio</Link>
                             </li>
                             <li className="menu__list-item">
-                                <Link to="/horario">horario</Link>
-                            </li>
-                            <li className="menu__list-item">
-                                <Link to="/sinopsis">sinopsis</Link>
-                            </li>
-                            <li className="menu__list-item">
-                                <Link to="/ver">ver</Link>
+                                <Link to="/emision">emisión</Link>
                             </li>
                         </ul>
                     </nav>
