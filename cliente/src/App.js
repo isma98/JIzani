@@ -10,9 +10,8 @@ import Login from './pages/Login';
 import Signup from './pages/Signup';
 import Synopsis from './pages/Synopsis';
 import Show from './pages/Show';
-import Profile from './pages/Profile';
 import Directory from './pages/Directory';
-import Schedule from './pages/Schedule';
+import Emmision from './pages/Emmision';
 
 function App() {
   return (
@@ -24,9 +23,8 @@ function App() {
           <Route exact path="/registro" component={Signup}/>
           <Route exact path="/sinopsis" component={Synopsis}/>
           <Route exact path="/ver" component={Show}/>
-          <Route exact path="/perfil" component={Profile}/>
           <Route exact path="/directorio" component={Directory} />
-          <Route exact path="/horario" component={Schedule} />
+          <Route exact path="/emision" component={Emmision} />
         </Switch>
       </Layout>
     </BrowserRouter>
