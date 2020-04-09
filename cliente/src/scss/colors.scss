@@ -5,6 +5,9 @@ $navbar-primary-items-color-hover:#FAFAFA;
 $navbar-secondary-items-color:#FAFAFA;
 $navbar-secondary-items-color-hover:#05AFF2;
 
+//Footer variables
+$footer-bg-color:rgba(57, 62, 65, .8);
+
 //Colors 
 $primary-color:#05AFF2;
 $secondary-color:#48BED9;
@@ -15,13 +18,23 @@ $success: #28A745;
 $warning: #FFC107;
 $danger: #DC3545;
 
+//Card variables
+$card-bg-color:#393E41;
+$card-bg-color-hover:rgba(57, 62, 65, .8);
+
+//Title variables
+$title-bg-color:#393E41;
+$title-bg-secondary-color:#05AFF2;
+$title-border-color:#05AFF2;
+
 //Border variables
 
 $primary-border-color: #393E41;
-$secondary-border-color: #E7E5DF;
+$secondary-border-color: #05AFF2;
 
 //Text color
 $title-color:#393E41;
+$title-secondary-color:#FAFAFA;
 $subtitle-color:#E7E5DF;
 $text-color: #393E41;
 $text-color-hover:#FAFAFA;
@@ -29,5 +42,5 @@ $text-color-hover:#FAFAFA;
 //Icon color
 $primary-icon-color:#FAFAFA;
 $secondary-icon-color:#393E41;
-$primary-icon-color-hover:#FAFAFA;
+$primary-icon-color-hover:#05AFF2;
 $secondary-icon-color-hover:#393E41;
