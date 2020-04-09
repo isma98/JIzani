@@ -1,0 +1,24 @@
+@import '../../scss/index.scss';
+
+.container-chapter{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: $primary-bg-color;
+}
+
+.container-series{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: $primary-bg-color;
+}
+
+@media screen and (min-width:$laptop-lg){
+    .container-chapter{
+        width: 80%;
+        border-radius: 10px;
+    }
+}

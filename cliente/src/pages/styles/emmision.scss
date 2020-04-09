@@ -1,0 +1,9 @@
+@import '../../scss/index.scss';
+
+.container-series{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: $primary-bg-color;
+}

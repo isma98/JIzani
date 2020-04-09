@@ -1,0 +1,36 @@
+@import '../../scss/index.scss';
+
+.box-search{
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+
+    .search{
+        border-radius: 5px 0 0 5px;
+        height: 35px;
+        width: 60%;
+        border:1px solid $secondary-border-color;
+    }
+
+    .btn{
+        background-color: $success;
+        color: $primary-icon-color;
+        border:none;
+        padding: 0 10px;
+        border-radius: 0 5px 5px 0;
+        font-family: $text;
+        font-size: $annotation-phone;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+}
+
+.container-series{
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: $primary-bg-color;
+}
