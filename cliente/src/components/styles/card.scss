@@ -1,0 +1,58 @@
+@import '../../scss/index.scss';
+
+.box{
+    width: 150px;
+    height: 200px;
+	box-shadow: 0 0 1px;
+	margin: 20px 0;
+	position: relative;
+	box-shadow: 0 0 1px;
+	cursor: pointer;
+    text-align: center;
+    transition: 0.5s;
+
+    &__link{
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+        color: $text-color-hover;
+        font-family: $annotation;
+        font-size: $text-phone;
+
+        &-image{
+            width: 100%;
+            height: 100%;
+        }
+
+        span{
+            width: 100%;
+            padding: 8px 0;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: $card-bg-color;
+        }
+    }
+
+    &:hover{
+        transform: scale(1.1);
+        z-index: 1;
+    }
+}
+
+@media screen and (min-width:$tablet){
+    .box{
+        width: 175px;
+        height: 225px;
+    }
+}
+
+@media screen and (min-width:$laptop-xl){
+    .box{
+        width: 200px;
+        height: 250px;
+        &__link{
+            font-size: $text-laptop;
+        }
+    }
+}

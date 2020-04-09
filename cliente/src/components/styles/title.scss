@@ -1,0 +1,43 @@
+@import '../../scss/index.scss';
+
+.box-title{
+	width: 100%;
+	background-color: $title-bg-color;
+	border-bottom: 4px solid $title-bg-secondary-color;
+	position: relative;
+    overflow: hidden;
+    
+    &::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: $title-border-color;
+        clip-path: polygon(80% 0, 100% 0, 80% 100%, 60% 100%);
+    }
+
+    &__message{
+        color: $text-color-hover;
+        font-family: $title;
+        font-size: $title-phone;
+        padding: 5px 0 5px 15px;    
+    }
+}
+
+
+@media screen and (min-width: $laptop-lg) {
+
+	.box-title{
+        margin: 15px 0;
+        
+        &::before{
+		content: '';
+		clip-path: polygon(90% 0, 100% 0, 90% 100%, 80% 100%);
+        }
+
+        &__message{
+            font-size: $title-laptop;
+            padding: 10px 0 10px 30px;    
+        }
+    }
+}

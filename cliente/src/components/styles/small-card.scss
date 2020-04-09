@@ -1,0 +1,60 @@
+@import '../../scss/index.scss';
+
+.chapter{
+    width: 210px;
+    height: 145px;
+	box-shadow: 0 0 1px;
+	margin: 20px 0;
+	position: relative;
+	box-shadow: 0 0 1px;
+	cursor: pointer;
+    text-align: center;
+    transition: 0.5s;
+    border-radius: 10px 0 10px 0;
+    overflow: hidden;
+
+    &__link{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        color: $text-color-hover;
+        font-family: $annotation;
+        font-size: $text-phone;
+
+        &-image{
+            width: 100%;
+            height: 100%;
+        }
+        span{
+            width: 100%;
+            position: absolute;
+            padding: 8px 0;
+            background-color: $card-bg-color-hover;
+        }
+        &-title{
+            top: 0;
+            left: 0;
+        }
+
+        &-episode{
+            bottom: 0;
+            left: 0;
+        }
+    }
+
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+
+@media screen and (min-width:$laptop-lg){
+    .chapter{
+        width: 220px;
+        height: 160px;
+        &__link{
+            font-size: $text-laptop;
+        }
+    }
+}

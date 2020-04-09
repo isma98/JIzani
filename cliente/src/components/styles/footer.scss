@@ -1,0 +1,61 @@
+@import '../../scss/index.scss';
+
+.container-footer{
+	width: 100%;
+	height: 100%;
+	background-color: $footer-bg-color;
+	color: $title-secondary-color;
+	display: flex;
+    justify-content: center;
+    &__left,
+    &__right{
+        padding:10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__left{
+        width: 45%;
+        small{
+            text-align: center;
+            font-family: $annotation;
+            font-size: $annotation-phone;
+        }
+    }
+
+    &__right{
+        width: 35%;
+        a{
+            text-decoration: none;
+            color: #FAFAFA;
+            margin: 5px;
+
+            i{
+                font-size: $icon-phone;
+                &:hover{
+                 color: $primary-icon-color-hover;   
+                }
+            }
+            &:hover{
+             color: $primary-icon-color-hover;   
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .container-footer{
+        &__left{
+            small{
+                font-size: $annotation-laptop;
+            }
+        }
+        &__right 
+            a{
+                i{
+                    font-size: $icon-laptop;
+                }	
+            } 
+    }
+}
